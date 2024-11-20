@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f5f5f5;
+    width: 100%;
+    height: 100vh;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 2rem;
+}
+
+nav h1{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.menuitem a{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.menuitem a:hover::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    color: #00b3ff;
+    background-color: #00b3ff;
+    transition: width 0.3s;
+}
+
+.menuitem a:hover::after{
+    width: 100%;
+}
+
+.menuitem a:active{
+    color: #00b3ff;
+}
+
+#home{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.heading{
+    line-height: 1;
+}
+
+.heading h2{
+    font-size: 5rem;
+    font-weight: 800;
+}
+
+.heading P{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.buttons{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.buttons button{
+    padding: 0.7rem 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 10rem;
+    cursor: pointer;
+}
+
+#btn2{
+    background-color: #000000;
+    color: #fff;
+}
+
+#btn2:hover {
+    color: #000000;
+    border: solid 1px #000000;
+    background-color: #f5f5f5;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+#btn1{
+    background-color: #f5f5f5;
+    color: #000000;
+    border: solid 1px #000000;
+}
+
+#btn1:hover {
+    color: #fff;
+    background-color: #000000;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/*floating ball css*/
+
+/* .ball {
+	background: #fff;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translate(-50%, -50%);
+	mix-blend-mode: difference;
+} */
+
+/* .ball{
+    position:fixed;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: 0.1s;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    mix-blend-mode: difference;
+} */
