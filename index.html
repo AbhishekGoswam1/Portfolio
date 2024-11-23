@@ -1,54 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="images/A-logo.svg" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <script src="https://kit.fontawesome.com/2b9cdc1c9a.js" crossorigin="anonymous"></script>
-</head>
-<body>
-
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/A-logo.svg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/2b9cdc1c9a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Header Section -->
     <header>
-        <nav>
-            <h1>Abhishek Goswami</h1>
-            <ul class="menu">
-                <li class="menuitem"><a href="#">Home</a></li>
-                <li class="menuitem"><a href="#about">About</a></li>
-                <li class="menuitem"><a href="#skills">Skills</a></li>
-                <li class="menuitem"><a href="#projects">Projects</a></li>
-                <li class="menuitem"><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <h1>Abhishek Goswami</h1>
+        <ul class="menu">
+          <li class="menuitem"><a href="#">Home</a></li>
+          <li class="menuitem"><a href="#about">About</a></li>
+          <li class="menuitem"><a href="#projects">Projects</a></li>
+          <li class="menuitem"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
+    <!-- Home Section -->
     <section id="home">
-        <div class="home-content">
-            <div class="heading">
-                <p class="upperpara">Hello, I'm </p>
-                <h2>Abhishek Goswami</h2>
-                <p class="lowerpara">Frontend Developer</p>
-                <!-- <div class="ball"></div> -->
+      <div class="home-content">
+        <div class="heading">
+          <p class="uppertext">Hey, I'm</p>
+          <h2>Abhishek Goswami</h2>
+          <p class="lowertext">Frontend Developer</p>
+          <!-- <div class="ball"></div> -->
+        </div>
+        <div class="buttons">
+          <button id="btn1">
+            <a href="assets/Abhishek-Resume.pdf" class="btn" download="">Download CV</a></button>
+          <button id="btn2">
+            <a href="#contact" class="btn">Contact Me</a></button>
+        </div>
+        <div class="socials">
+          <span><a href=""><i class="fa-brands fa-github"></i></a></span>
+          <span><a href=""><i class="fa-brands fa-linkedin"></i></a></span>
+          <span><a href=""><i class="fa-brands fa-instagram"></i></a></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about-container">
+            <div class="heading-section">
+                <h2>About Me</h2>
+                <hr>
+                <p>Here you can find more information about me and my Skills</p>
             </div>
-            <div class="buttons">
-                <button id="btn1"><a href="#" class="btn">Download CV</a></button>
-                <button id="btn2"><a href="#contact" class="btn">Contact Me</a></button>
-            </div>
-            <div class="socials">
-                <span><a href=""><i class="fa-brands fa-github"></i></a></span>
-                <span><a href=""><i class="fa-brands fa-linkedin"></i></a></span>
-                <span><a href=""><i class="fa-brands fa-instagram"></i></a></span>
+            <div class="about-content">
+                <div class="know-me">
+                    <h3 class="headings">Get to know me</h3>
+                    <p>Hi, I'm Abhishek Goswami, a Frontend Developer based in India. I have a passion for web development and love to create responsive and interactive websites. I have experience in HTML, CSS, JavaScript, React, and Git. I am always eager to learn new technologies and improve my skills. I am currently looking for new opportunities to work with a team of talented developers.</p>
+                    <button class="action-button"><a href="">Work with Me</a></button>
+                </div>
+                <div class="skill-section">
+                    <h3 class="headings">My Skills</h3>
+                    <div class="skill-container">
+                        <div class="skills">HTML</div>
+                        <div class="skills">CSS</div>
+                        <div class="skills">JavaScript</div>
+                        <div class="skills">React js</div>
+                        <div class="skills">Node js</div>
+                        <div class="skills">Responsive Design</div>
+                        <div class="skills">SAAS</div>
+                        <div class="skills">Linux</div>
+                        <div class="skills">TypeScript</div>
+                        <div class="skills">GIT</div>
+                        <div class="skills">GitHub</div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="projects-container">
+            <div class="heading-section">
+                <h2>Projects</h2>
+                <hr>
+                <p>Here are a few projects I've worked on. Feel free to explore and see my work.</p>
+            </div>
+            <div class="project-content">
+                <div class="project-card">
+                    <img src="images/project1.jpg" alt="Project image" />
+                    <div class="project-info">
+                    <h3>Eco-life Hub</h3>
+                    <p>
+                        Eco-life Hub is a web application designed to promote sustainable living. It provides users with resources and tools to adopt eco-friendly habits, track their carbon footprint, and connect with a community of like-minded individuals.
+                    </p>
+                    <button class="action-button"><a href="">Live Project</a></button>
+                    <button class="action-button"><a href="">GitHub link</a></button>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/project2.jpg" alt="Project image" />
+                    <div class="project-info">
+                    <h3>Project 2</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+                        voluptas, quod, quae, quos quia quibusdam
+                    </p>
+                    <button class="action-button"><a href="">Live Project</a></button>
+                    <button class="action-button"><a href="">GitHub link</a></button>                    
+                </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact"></section>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2024 Abhishek Goswami. All rights reserved.</p>
+      </div>
+    </footer>
 
     <script src="main.js"></script>
-    
-</body>
+  </body>
 </html>

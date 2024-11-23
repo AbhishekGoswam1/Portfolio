@@ -7,7 +7,7 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
-    background-color: #f5f5f5;
+    background-color: #ffffff;
     width: 100%;
     height: 100vh;
 }
@@ -23,10 +23,16 @@ a{
 }
 
 nav{
+    background-color: #ffffff;
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 2rem 2rem;
+    padding: 1rem 2rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav h1{
@@ -66,7 +72,7 @@ nav h1{
 
 #home{
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,25 +93,28 @@ nav h1{
     font-weight: 500;
 }
 
+.uppertext{
+    margin-left: 1.2rem;
+}
+
 .buttons{
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     gap: 1.5rem;
     margin-top: 1rem;
 }
 
 .buttons button{
-    padding: 0.7rem 1rem;
+    padding: 0.5rem 0.8rem;
     font-size: 1.1rem;
     font-weight: 500;
-    border: none;
-    border-radius: 10rem;
+    border: solid 1px #000000;
+    border-radius: 5px;
     cursor: pointer;
 }
 
 #btn1{
-    background-color: #f5f5f5;
+    background-color: #ffffff;
     color: #000000;
     border: solid 1px #000000;
 }
@@ -123,8 +132,7 @@ nav h1{
 
 #btn2:hover {
     color: #000000;
-    border: solid 1px #000000;
-    background-color: #f5f5f5;
+    background-color: #ffffff;
     transition: ease-in-out 0.3s;
 }
 
@@ -137,7 +145,6 @@ nav h1{
 
 .socials a{
     font-size: 2rem;
-    font-weight: 500;
 }
 
 /*floating ball css*/
@@ -165,3 +172,148 @@ nav h1{
     pointer-events: none;
     mix-blend-mode: difference;
 } */
+
+/*about section*/
+
+#about{
+    width: 100%;
+    height: 100vh;
+    background-color: #eeeeee;
+    padding: 6rem 2rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+.about-container{
+    width: 100%;
+}
+
+.heading-section{
+    text-align: center;
+}
+
+.heading-section h2{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.heading-section hr{
+    width: 3rem;
+    height: 0.4rem;
+    background-color: #00b3ff;
+    border-radius: 2rem;
+    border: none;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+.heading-section p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #525252;
+    margin-bottom: 2rem;
+}
+
+.about-content{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.know-me{
+    width: 40%;
+    padding: 1rem;
+}
+
+.know-me h3{
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.know-me p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #525252;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.action-button{
+    background-color: #555;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    border: solid 1px #555;
+    transition: ease-in-out 0.3s;
+}
+
+.action-button:hover{
+    background-color: #ffffff;
+    color: #000000;
+    transform: translateY(-5px);
+}
+
+.skill-section{
+    width: 40%;
+    padding: 1rem;
+}
+
+.skill-section h3{
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.skill-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.skills{
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #555;
+    padding: 0.7rem 0.9rem;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+/*project section*/
+
+#projects{
+    width: 100%;
+    height: 100vh;
+    padding: 6rem 2rem;
+}
+
+.project-container{
+    width: 100%;
+}
+
+.project-content{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.project-card{
+    width: 23rem;
+    height: 25rem;
+    padding: 1rem;
+    background-color: #eeeeee;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: ease-in-out 0.3s;
+}
+
+.project-card:hover{
+    transform: translateY(-5px);
+}
