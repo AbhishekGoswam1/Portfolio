@@ -48,7 +48,7 @@ nav h1{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 1.5rem;
+    gap: 2rem;
 }
 
 .menuitem a{
@@ -56,18 +56,11 @@ nav h1{
     font-weight: 500;
 }
 
-.menuitem a:hover::after{
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    color: #00b3ff;
-    background-color: #00b3ff;
-    transition: width 0.3s;
-}
-
-.menuitem a:hover::after{
-    width: 100%;
+.menuitem a:hover{
+    text-decoration: underline;
+    text-decoration-color: #00b3ff;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
 }
 
 .menuitem a:active{
@@ -104,6 +97,7 @@ nav h1{
 .buttons{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 1.5rem;
     margin-top: 1rem;
 }
@@ -318,7 +312,7 @@ nav h1{
 }
 
 .project-card img{
-    width: 100%;
+    max-width: 21rem;
     /* height: 50%; */
     border-radius: 10px;
 }
@@ -451,8 +445,8 @@ footer{
     background-color: #000000;
     padding: 5rem 2rem;
     color: #ffffff;
-    border-top-left-radius: 2rem;
-    border-top-right-radius: 2rem;
+    /* border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem; */
 }
 
 .footer-content{
@@ -493,4 +487,10 @@ footer{
     text-align: center;
     font-weight: 500;
     color: #999999;
+}
+
+/*responsive*/
+
+@media screen and (max-width: 768px){
+
 }
