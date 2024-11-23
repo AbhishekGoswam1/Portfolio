@@ -22,6 +22,10 @@ a{
     font-family: 'Montserrat', sans-serif;
 }
 
+button{
+    font-family: 'Montserrat', sans-serif;
+}
+
 nav{
     background-color: #ffffff;
     position: fixed;
@@ -289,7 +293,6 @@ nav h1{
 
 #projects{
     width: 100%;
-    height: 100vh;
     padding: 6rem 2rem;
 }
 
@@ -306,7 +309,7 @@ nav h1{
 
 .project-card{
     width: 23rem;
-    height: 25rem;
+    height: 27rem;
     padding: 1rem;
     background-color: #eeeeee;
     border-radius: 10px;
@@ -314,6 +317,131 @@ nav h1{
     transition: ease-in-out 0.3s;
 }
 
-.project-card:hover{
-    transform: translateY(-5px);
+.project-card img{
+    width: 100%;
+    height: 50%;
+    border-radius: 10px;
 }
+
+.project-card h3{
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+
+.project-card p{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #525252;
+    margin: 0.5rem 0;
+}
+
+.links{
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.8rem;
+}
+
+.live-link{
+    background-color: #00b3ff;
+    color: #ffffff;
+    padding: 0.4rem 0.8rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    transition: ease-in-out 0.3s;
+}
+
+.live-link:hover{
+    background-color: #555;
+    color: #fff;
+}
+
+.project-card span{
+    font-size: 1.7rem;
+}
+
+/*contact section*/
+
+#contact{
+    width: 100%;
+    /* height: 100vh; */
+    background-color: #eeeeee;
+    padding: 6rem 2rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+
+.contact-container{
+    width: 100%;
+}
+
+.form-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form{
+    width: 60%;
+    padding: 5rem;
+    background-color: #ffffff;
+    margin-top: 2rem;
+    border-radius: 5px;
+    box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group{
+    width: 100%;
+}
+
+.label{
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.input-field{
+    margin-bottom: 2rem;
+}
+
+input, textarea{
+    font-family: inherit;
+    width: 100%;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #eeeeee;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+    outline: none;
+}
+
+.form-group button{
+    width: 10rem;
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    font-weight: 550;
+    background-color: #00b3ff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #999999;
+    font-weight: 500;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*footer section*/
+
