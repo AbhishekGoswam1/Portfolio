@@ -30,3 +30,12 @@
 // 	mouseX = event.pageX;
 // 	mouseY = event.pageY;
 // });
+
+
+//to stop the page from reloading
+
+let button = document.querySelector('.submit-button');
+button.addEventListener('click', function(event) {
+    event.preventDefault();
+    
+});
