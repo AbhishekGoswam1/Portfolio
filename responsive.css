@@ -15,6 +15,7 @@
     }
 
     .menu i {
+        font-size: 2rem;
         display: block;
         color: #fff;
     }
@@ -28,10 +29,15 @@
     }
 
     .heading{
-        line-height: 1.2;
+        line-height: 1.5;
     }
 
-    #home p {
+    .heading h2{
+        font-size: 2.5rem;
+        line-height: 2rem;
+    }
+
+    .heading p {
         font-size: 1.3rem;
     }
 
@@ -40,16 +46,11 @@
     }
 
     .buttons button {
-        padding: 0.5rem 0.8rem;
-        font-size: 1rem;
+        padding: 0.6rem 0.9rem;
     }
 
     .socials {
         gap: 1rem;
-    }
-
-    .socials i {
-        font-size: 1.7rem;
     }
 
     #about {
