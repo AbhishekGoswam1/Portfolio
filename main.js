@@ -33,9 +33,36 @@
 
 
 //to stop the page from reloading
+function showMessage() {
+    var input = document.getElementById("message").value;
+    alert(input);
+    document.getElementById("message").value = ""; // Clear the input field
+}
 
 let button = document.querySelector('.submit-button');
 button.addEventListener('click', function(event) {
     event.preventDefault();
-    
+    showMessage();
 });
+function showMessage() {
+    var username = document.getElementById("name").value;
+    if (username) {
+        var username = username;
+        var message = `${username},Thank you for reaching out to me. I will get back to you shortly.`;
+        alert(message);
+        document.getElementById("message").value = ""; // Clear the input field
+    }
+}
+// Store messages in an array
+// let messages = [];
+
+// function showMessage() {
+//     var input = document.getElementById("message").value;
+//     if (input) {
+//         messages.push(input); // Store the message
+//         alert(input);
+//         document.getElementById("message").value = ""; // Clear the input field
+//         console.log(messages); // Log the messages to the console
+//     }
+// }
+
