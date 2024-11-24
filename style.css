@@ -9,7 +9,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     background-color: #ffffff;
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 
 li{
@@ -26,16 +26,21 @@ button{
     font-family: 'Montserrat', sans-serif;
 }
 
+/*nav section*/
+
+header{
+    width: 100%;
+}
+
 nav{
     background-color: #ffffff;
     position: fixed;
     width: 100%;
+    height: 80px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
-    border-bottom-left-radius: 2rem;
-    border-bottom-right-radius: 2rem;
+    padding: 1rem 4rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -46,9 +51,16 @@ nav h1{
 
 .menu{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     gap: 2rem;
+}
+
+.menu i{
+    font-size: 1.6rem;
+    color: #000000;
+    cursor: pointer;
+    display: none;
 }
 
 .menuitem a{
@@ -81,17 +93,13 @@ nav h1{
 }
 
 .heading h2{
-    font-size: 5rem;
+    font-size: 5vmax;
     font-weight: 800;
 }
 
 .heading P{
     font-size: 1.8rem;
     font-weight: 500;
-}
-
-.uppertext{
-    margin-left: 1.2rem;
 }
 
 .buttons{
@@ -103,7 +111,7 @@ nav h1{
 }
 
 .buttons button{
-    padding: 0.5rem 0.8rem;
+    padding: 0.7rem 1rem;
     font-size: 1.1rem;
     font-weight: 500;
     border: solid 1px #000000;
@@ -141,7 +149,7 @@ nav h1{
     margin-top: 1rem;
 }
 
-.socials a{
+.socials i{
     font-size: 2rem;
 }
 
@@ -175,7 +183,7 @@ nav h1{
 
 #about{
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-color: #eeeeee;
     padding: 6rem 2rem;
     border-bottom-left-radius: 2rem;
@@ -187,6 +195,7 @@ nav h1{
 }
 
 .heading-section{
+    width: 100%;
     text-align: center;
 }
 
@@ -214,20 +223,21 @@ nav h1{
 }
 
 .about-content{
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 2rem;
 }
 
-.know-me{
-    width: 40%;
+.know-me, .skill-section{
+    width: 43%;
     padding: 1rem;
 }
 
-.know-me h3{
+.know-me h3, .skill-section h3{
     font-size: 1.8rem;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 1rem;
 }
 
@@ -240,32 +250,19 @@ nav h1{
 }
 
 .action-button{
-    background-color: #555;
+    background-color: lightseagreen;
     color: #ffffff;
-    padding: 0.5rem 1rem;
+    padding: 0.7rem 1.1rem;
     border-radius: 5px;
     font-size: 1.1rem;
     font-weight: 500;
     cursor: pointer;
-    border: solid 1px #555;
+    border: none;
     transition: ease-in-out 0.3s;
 }
 
 .action-button:hover{
-    background-color: #ffffff;
-    color: #000000;
     transform: translateY(-5px);
-}
-
-.skill-section{
-    width: 40%;
-    padding: 1rem;
-}
-
-.skill-section h3{
-    font-size: 1.8rem;
-    font-weight: 500;
-    margin-bottom: 1rem;
 }
 
 .skill-container{
@@ -287,6 +284,7 @@ nav h1{
 
 #projects{
     width: 100%;
+    height: auto;
     padding: 6rem 2rem;
 }
 
@@ -296,50 +294,49 @@ nav h1{
 
 .project-content{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 1.5rem;
+    gap: 2rem;
 }
 
 .project-card{
-    width: 23rem;
+    width: 20rem;
     height: 27rem;
     padding: 1rem;
     background-color: #eeeeee;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: ease-in-out 0.3s;
+    overflow: hidden;
 }
 
 .project-card img{
-    max-width: 21rem;
-    /* height: 50%; */
+    width: 100%;
     border-radius: 10px;
 }
 
 .project-card h3{
     font-size: 1.1rem;
     font-weight: 600;
-    margin-top: 0.5rem;
+    margin: 0.5rem 0;
 }
 
 .project-card p{
     font-size: 1rem;
     font-weight: 500;
     color: #525252;
-    margin: 0.5rem 0;
 }
 
 .links{
     display: flex;
     gap: 1rem;
-    margin-top: 0.8rem;
+    margin-top: 0.5rem;
 }
 
 .live-link{
     background-color: #00b3ff;
     color: #ffffff;
-    padding: 0.4rem 0.8rem;
+    padding: 0.5rem 0.8rem;
     border-radius: 5px;
     font-size: 1rem;
     font-weight: 500;
@@ -361,7 +358,7 @@ nav h1{
 
 #contact{
     width: 100%;
-    /* height: 100vh; */
+    height: auto;
     background-color: #eeeeee;
     padding: 6rem 2rem;
     border-top-left-radius: 2rem;
@@ -380,8 +377,8 @@ nav h1{
 }
 
 .contact-form{
-    width: 60%;
-    padding: 4rem;
+    width: 50vw;
+    padding: 4rem 3rem;
     background-color: #ffffff;
     margin-top: 2rem;
     border-radius: 10px;
@@ -411,8 +408,8 @@ input, textarea{
     font-size: 1rem;
     font-weight: 500;
     background-color: #eeeeee;
-    border: none;
     border-radius: 5px;
+    border: none;
     resize: none;
     outline: none;
 }
@@ -441,12 +438,10 @@ textarea::placeholder {
 
 footer{
     width: 100%;
-    /* height: fit-content; */
+    height: auto;
     background-color: #000000;
-    padding: 5rem 2rem;
+    padding: 5rem 2rem 2rem 2rem;
     color: #ffffff;
-    /* border-top-left-radius: 2rem;
-    border-top-right-radius: 2rem; */
 }
 
 .footer-content{
@@ -454,7 +449,7 @@ footer{
     justify-content: space-around;
     /* align-items: center; */
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 2rem;
     margin-bottom: 2rem;
 }
 
@@ -489,8 +484,3 @@ footer{
     color: #999999;
 }
 
-/*responsive*/
-
-@media screen and (max-width: 768px){
-
-}
