@@ -118,12 +118,13 @@
         padding: 0.5rem 1rem;
     }
 
-    #footer{
-        padding: 1rem 1rem;
+    footer{
+        padding-top: 3rem;
     }
 
     .footer-content{
         justify-content: center;
+        gap: 1rem;
     }
 
     .footer-text{
@@ -132,7 +133,7 @@
     }
 
     .footer-text h2, .footer-links h3{
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 
     .footer-links{
@@ -141,7 +142,7 @@
     }
 
     .footer-links i{
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     }
 
 }
