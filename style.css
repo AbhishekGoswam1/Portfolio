@@ -79,6 +79,37 @@ nav h1{
     color: #00b3ff;
 }
 
+.side-menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.253);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    transition: ease-in-out 0.3s;
+    z-index: 999;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 2rem;
+    gap: 1.5rem;
+}
+
+.side-menu i{
+    color: #000000;
+    cursor: pointer;
+}
+
+.side-menu li{
+    width: 100%;
+    color: #000000;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
 #home{
     width: 100%;
     height: 100vh;
@@ -293,30 +324,31 @@ nav h1{
 }
 
 .project-content{
+    width: 100%;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 2rem;
+    flex-direction: column;
+    gap: 3rem;
 }
 
 .project-card{
-    width: 20rem;
-    height: 27rem;
-    padding: 1rem;
-    background-color: #eeeeee;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: ease-in-out 0.3s;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
     overflow: hidden;
 }
 
 .project-card img{
-    width: 100%;
-    border-radius: 10px;
+    width: 35%;
+    border-radius: 5px;
+}
+
+.project-info{
+    width: 40%;
 }
 
 .project-card h3{
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     font-weight: 600;
     margin: 0.5rem 0;
 }

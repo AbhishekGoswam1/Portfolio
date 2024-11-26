@@ -31,14 +31,13 @@
 // 	mouseY = event.pageY;
 // });
 
-
-//to stop the page from reloading
 function showMessage() {
     var input = document.getElementById("message").value;
     alert(input);
     document.getElementById("message").value = ""; // Clear the input field
 }
 
+//to stop the page from reloading
 let button = document.querySelector('.submit-button');
 button.addEventListener('click', function(event) {
     event.preventDefault();
@@ -66,3 +65,14 @@ function showMessage() {
 //     }
 // }
 
+// function to show the side menu
+function showSideMenu() {
+    var sideMenu = document.querySelector('.side-menu');
+    sideMenu.style.display = 'flex';
+}
+
+// function to hide the side menu
+function hideMenu() {
+    var sideMenu = document.querySelector('.side-menu');
+    sideMenu.style.display = 'none';
+}
