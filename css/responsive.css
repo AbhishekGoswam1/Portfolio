@@ -11,7 +11,7 @@
     }
 
     nav h1 {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
 
     .menu i {
@@ -55,6 +55,7 @@
 
     .buttons button {
         padding: 0.6rem 0.9rem;
+        font-size: 1rem;
     }
 
     .socials {
@@ -176,6 +177,15 @@
 /* css for width less than 450px */
 
 @media (max-width: 450px) {
+
+    #home{
+        height: 80vh;
+    }
+
+    .buttons button {
+        padding: 0.5rem 0.7rem;
+    }
+
     .know-me {
         padding: 0 1rem;
     }

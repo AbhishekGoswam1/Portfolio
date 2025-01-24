@@ -11,9 +11,19 @@ function hideMenu() {
     sideMenu.style.display = 'none';
 }
 
+// function to stop scrolling when the page is loading
+function stopScroll() {
+    document.body.style.overflow = 'hidden';
+}
+
+// function to start scrolling when the page is loaded
+function startScroll() {
+    document.body.style.overflow = 'visible';
+}
 
 //function to animate the elements while loading the page 
 function animations() {
+    stopScroll();       // stop scrolling when the page is loading by calling the stopScroll function
     const tl = gsap.timeline()
 
 tl.to(".inner", {
@@ -27,6 +37,7 @@ tl.to("#loader",{
     height: 0,
     duration: 0.5,
     ease: "circ.easeInOut",
+    onComplete: startScroll,        //calls the startScroll function to start scrolling
 })
 
 tl.from(".topBottom", {
