@@ -24,6 +24,10 @@
         display: none;
     }
 
+    .side-menu{
+        z-index: 999;
+    }
+
     .side-menu i{
         font-size: 2rem;
     }

@@ -12,24 +12,38 @@ function hideMenu() {
 }
 
 
-// function showMessage() {
-//     var input = document.getElementById("message").value;
-//     alert(input);
-//     document.getElementById("message").value = ""; // Clear the input field
-// }
+//function to animate the elements while loading the page 
+function animations() {
+    const tl = gsap.timeline()
 
-// //to stop the page from reloading
-// let button = document.querySelector('.submit-button');
-// button.addEventListener('click', function(event) {
-//     showMessage();
-// });
+tl.to(".inner", {
+    y: "-100%",
+    duration: 1,
+    delay: 1,
+    ease: "circ.easeInOut",
+})
 
-// function showMessage() {
-//     var username = document.getElementById("name").value;
-//     if (username) {
-//         var username = username;
-//         var message = `${username},Thank you for reaching out to me. I will get back to you shortly.`;
-//         alert(message);
-//         document.getElementById("message").value = ""; // Clear the input field
-//     }
-// }
+tl.to("#loader",{
+    height: 0,
+    duration: 0.5,
+    ease: "circ.easeInOut",
+})
+
+tl.from(".topBottom", {
+    y: -30,
+    opacity: 0,
+    duration: 0.6,
+    stagger: 0.2,
+    ease: "circ.easeInOut",
+})
+
+tl.from(".bottomTop", {
+    y: 30,
+    opacity: 0,
+    duration: 0.6,
+    stagger: 0.2,
+    ease: "circ.easeInOut",
+})
+}
+
+animations()

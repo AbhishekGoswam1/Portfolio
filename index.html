@@ -27,11 +27,21 @@
     ></script>
   </head>
   <body>
+
+    <div id="loader">
+      <h2>
+        <span class="outer">
+          <span class="inner">Welcome to my Portfolio</span>
+        </span>
+      </h2>
+    </div>
+
     <!-- Header Section -->
     <header>
-      <nav>
-        <h1>Abhishek Goswami</h1>
-        <ul class="menu">
+      <!-- topBottom class: class for applying animation top to bottom -->
+      <nav class="topBottom"> 
+        <h1 class="topBottom">Abhishek</h1>
+        <ul class="menu topBottom">
           <li class="menuitem"><a href="#">Home</a></li>
           <li class="menuitem"><a href="#about">About</a></li>
           <li class="menuitem"><a href="#projects">Projects</a></li>
@@ -52,18 +62,19 @@
     <section id="home">
       <div class="home-content">
         <div class="heading">
-          <p class="uppertext">Hey, I'm</p>
-          <h2>Abhishek Goswami</h2>
-          <p class="lowertext">Frontend Developer</p>
+          <p class="uppertext bottomTop">Hey, I'm</p>
+          <!-- bottomTop class: animation from bottom to top -->
+          <h2 class="bottomTop">Abhishek Goswami</h2>
+          <p class="lowertext bottomTop">Frontend Developer</p>
           <!-- <div class="ball"></div>~ -->
         </div>
-        <div class="buttons">
+        <div class="buttons bottomTop">
           <button id="btn1">
             <a href="assets/Abhishek-Resume.pdf" class="btn" download="">Download CV</a></button>
           <button id="btn2">
             <a href="#contact" class="btn">Contact Me</a></button>
         </div>
-        <div class="socials">
+        <div class="socials bottomTop">
           <span><a href="https://github.com/AbhishekGoswam1" target="_blank"><i class="fa-brands fa-github"></i></a></span>
           <span><a href="https://www.linkedin.com/in/abhishek-goswamii/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></span>
           <span><a href="https://www.instagram.com/abhi_shek.in" target="_blank"><i class="fa-brands fa-instagram"></i></a></span>
@@ -82,7 +93,7 @@
             <div class="about-content">
                 <div class="know-me">
                     <h3 class="headings">Get to know me</h3>
-                    <p>Hi, I'm Abhishek Goswami, a Frontend Developer and MCA student based in Gurugram, Haryana. I have a passion for web development and enjoy creating responsive, minimal and interactive websites. With experience in HTML, CSS, JavaScript, React, and Git, I'm always eager to learn new technologies and improve my skills. Currently, I'm looking for opportunities to work with a team of talented developers and grow as a professional.</p>
+                    <p>Hi, I'm Abhishek Goswami, a Frontend Developer and MCA student based in Gurugram, Haryana. I have a passion for web development and enjoy creating responsive, minimal and interactive websites. With experience in HTML, CSS, JavaScript, React, and Git, I'm always eager to learn new technologies and improve my skills.</p>
                     <button class="action-button"><a href="#contact">Hire Me</a></button>
                 </div>
                 <div class="skill-section">
@@ -238,8 +249,9 @@
       </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--this is gsap cdn, used for applying animation to the elements-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="main.js"></script>
 
   </body>
