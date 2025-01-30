@@ -6,8 +6,7 @@
     nav {
         height: 55px;
         padding: 1.5rem 1.5rem;
-        background-color: #00b3ff;
-        color: #fff;
+        
     }
 
     nav h1 {
@@ -17,7 +16,7 @@
     .menu i {
         font-size: 2rem;
         display: block;
-        color: #fff;
+        color: #000;
     }
 
     .menuitem{
@@ -26,6 +25,7 @@
 
     .side-menu{
         z-index: 999;
+        background-color: #fff;
     }
 
     .side-menu i{
@@ -87,7 +87,7 @@
         margin-bottom: 1rem;
     }
 
-    .know-me h3, .skill-section h3 {
+    .know-me h3, .education-section h3 {
         font-size: 1.5rem;
     }
 
@@ -99,13 +99,9 @@
         transform: translateY(0);
     }
 
-    .skill-section {
+    .education-section {
         width: 100%;
         padding: 0 3rem;
-    }
-
-    .skill-content{
-        margin-top: 1.5rem;
     }
 
     #projects{
@@ -190,7 +186,7 @@
         padding: 0 1rem;
     }
 
-    .skill-section {
+    .education-section {
         padding: 0 1rem;
     }
 

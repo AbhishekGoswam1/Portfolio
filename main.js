@@ -57,4 +57,34 @@ tl.from(".bottomTop", {
 })
 }
 
-animations()
+
+// Redirect to home page on reload and show loader
+document.addEventListener("DOMContentLoaded", function () {
+    let loader = document.getElementById("loader");
+
+    // If reloaded from another page, redirect to home
+    if (!sessionStorage.getItem("reloaded")) {
+        sessionStorage.setItem("reloaded", "true"); // Set flag
+        setTimeout(() => {
+            window.location.href = "/index.html"; // Redirect to home page
+        }, 500); // Adjust delay as needed
+    } else {
+        sessionStorage.removeItem("reloaded"); // Remove the flag for next reload
+        animations(); // Run animations when staying on the page
+    }
+});
+
+
+//this function creates a copy of skills images and appends it to the skills section
+function createSkills() {
+
+    var skills = document.querySelector(".slider");
+
+    for(let i = 0; i <2; i++){
+        var skillsCopy = document.querySelector('.skill-container').cloneNode(true);
+        skills.appendChild(skillsCopy);
+    }
+
+}
+
+createSkills(); //calling the function to create the skills images

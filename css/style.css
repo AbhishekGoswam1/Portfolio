@@ -37,6 +37,7 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 9999;
 }
 
 #loader h2{
@@ -64,7 +65,8 @@ header{
 }
 
 nav{
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.495);
+    backdrop-filter: blur(10px);
     position: fixed;
     width: 100%;
     height: 70px;
@@ -213,7 +215,12 @@ nav h1{
 }
 
 .socials i{
-    font-size: 2rem;
+    font-size: 2.4rem;
+}
+
+.socials i:hover{
+    transform: scale3d(1.1, 1.1, 1.1);
+    transition: ease-in-out 0.3s;
 }
 
 /*about section*/
@@ -267,13 +274,13 @@ nav h1{
     gap: 2rem;
 }
 
-.know-me, .skill-section{
-    width: 43%;
+.know-me, .education-section{
+    width: 45%;
     padding: 1rem;
 }
 
-.know-me h3, .skill-section h3, .education-section h3{
-    font-size: 1.8rem;
+.know-me h3, .education h3, .skills-section h3{
+    font-size: 2rem;
     font-weight: 600;
     margin-bottom: 1rem;
 }
@@ -285,14 +292,10 @@ nav h1{
 }
 
 .education-item h4 {
-    color: #000;
+    font-size: 1.2rem;
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-}
-
-.education-item h4 i {
-    color: #000;
+    gap: 0.6rem;
 }
 
 .education-item p {
@@ -317,26 +320,53 @@ nav h1{
     font-weight: 500;
     cursor: pointer;
     border: none;
-    transition: ease-in-out 0.3s;
+    transition: ease-in-out 0.2s;
 }
 
 .action-button:hover{
-    transform: translateY(-5px);
+    /* transform: translateY(-5px); */
+    background-color: #005eff;
+}
+
+.skills-section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
 }
 
 .skill-container{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
+    user-select: none;
+    animation: slider 20s infinite linear; /*slider animation applied*/
 }
 
-.skills{
-    font-size: 1rem;
-    font-weight: 500;
-    background-color: #555;
-    padding: 0.7rem 0.9rem;
-    border-radius: 5px;
-    color: #ffffff;
+.slider:hover .skill-container{
+    animation-play-state: paused;
+}
+
+.skill-container img{
+    width: 7rem;
+    margin: 2rem 1rem 0 1rem;
+}
+
+/*slider animation*/
+@keyframes slider{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
 }
 
 /*project section*/
