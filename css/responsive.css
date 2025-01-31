@@ -104,6 +104,10 @@
         padding: 0 3rem;
     }
 
+    .skill-container img{
+        width: 5rem;
+    }
+
     #projects{
         padding: 4rem 1rem;
     }
@@ -175,7 +179,7 @@
 @media (max-width: 450px) {
 
     #home{
-        height: 80vh;
+        height: 90vh;
     }
 
     .buttons button {

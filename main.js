@@ -78,13 +78,15 @@ document.addEventListener("DOMContentLoaded", function () {
 //this function creates a copy of skills images and appends it to the skills section
 function createSkills() {
 
-    var skills = document.querySelector(".slider");
+    var skills = document.querySelector(".slider");  //selecting the skills section
 
-    for(let i = 0; i <2; i++){
-        var skillsCopy = document.querySelector('.skill-container').cloneNode(true);
-        skills.appendChild(skillsCopy);
+    for(let i = 0; i <2; i++){  //loop to create 2 copies of the skills images
+        var skillsCopy = document.querySelector('.skill-container').cloneNode(true);  //cloneNode method creates a copy of the node
+        skills.appendChild(skillsCopy);  //appending the copy to the skills section
     }
 
 }
 
 createSkills(); //calling the function to create the skills images
+
+
