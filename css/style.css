@@ -230,7 +230,7 @@ nav h1{
     width: 100%;
     height: auto;
     background-color: #eeeeee;
-    padding: 6rem 2rem;
+    padding: 6rem 4rem;
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
 }
@@ -357,7 +357,7 @@ nav h1{
 
 .skill-container img{
     width: 7rem;
-    margin: 2rem 0.8rem 0 0.8rem;
+    margin: 2rem 1rem 0 1rem;
 }
 
 /*slider animation*/
@@ -385,6 +385,7 @@ nav h1{
 .project-content{
     width: 100%;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     gap: 2.5rem;
     margin-top: 2.5rem;
@@ -404,7 +405,7 @@ nav h1{
 }
 
 .project-info{
-    width: 40%;
+    max-width: 30rem;
 }
 
 .project-card h3{
@@ -575,4 +576,3 @@ footer{
     font-weight: 500;
     color: #999999;
 }
-
