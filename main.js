@@ -67,9 +67,9 @@ document.addEventListener("DOMContentLoaded", function () {
         sessionStorage.setItem("reloaded", "true"); // Set flag
         setTimeout(() => {
             window.location.href = "/index.html"; // Redirect to home page
-        }, 500); // Adjust delay as needed
+        }, 500);
     } else {
-        sessionStorage.removeItem("reloaded"); // Remove the flag for next reload
+        sessionStorage.removeItem("reloaded");
         animations(); // Run animations when staying on the page
     }
 });
@@ -88,5 +88,3 @@ function createSkills() {
 }
 
 createSkills(); //calling the function to create the skills images
-
-
